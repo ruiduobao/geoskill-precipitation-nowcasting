@@ -1,0 +1,45 @@
+{
+  "source": "synthetic",
+  "n_frames_input": 4,
+  "dt_minutes": 15.0,
+  "lead_time_minutes": 60.0,
+  "n_forecast_steps": 4,
+  "displacement_per_step_px": {
+    "vy": 2.0,
+    "vx": 3.0
+  },
+  "mean_peak_correlation": 0.9943236425365378,
+  "frame_pairs": [
+    {
+      "from_frame": 0,
+      "to_frame": 1,
+      "vy": 2.0,
+      "vx": 3.0,
+      "corr": 0.994328072375894
+    },
+    {
+      "from_frame": 1,
+      "to_frame": 2,
+      "vy": 2.0,
+      "vx": 3.0,
+      "corr": 0.994418448564976
+    },
+    {
+      "from_frame": 2,
+      "to_frame": 3,
+      "vy": 2.0,
+      "vx": 3.0,
+      "corr": 0.9942244066687435
+    }
+  ],
+  "forecast_lead_times_minutes": [
+    15.0,
+    30.0,
+    45.0,
+    60.0
+  ],
+  "synthetic_truth_velocity_px": {
+    "vy": 2.0,
+    "vx": 3.0
+  }
+}

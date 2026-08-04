@@ -1,0 +1,17 @@
+name: geoskill-precipitation-nowcasting
+display_name: 降水临近预报
+description: |
+  基于光流法（交叉相关位移估计）的拉格朗日持久性降水临近预报，外推未来 0-6 小时降水场，输出预报序列 GeoTIFF 与位移场 JSON。Optical-flow (cross-correlation) Lagrangian persistence nowcasting that extrapolates precipitation fields 0-6 hours ahead, outputting a forecast GeoTIFF stack and a displacement-field JSON.
+version: 0.1.0
+author: Mavis
+entrypoint: geoskill-precipitation-nowcasting.py
+runtime: python>=3.9
+tags:
+  - climate
+  - dem
+  - gis
+  - raster
+  - remote-sensing
+  - simulation
+  - terrain
+  - weather

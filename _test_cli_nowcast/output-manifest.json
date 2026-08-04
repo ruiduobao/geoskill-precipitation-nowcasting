@@ -1,0 +1,67 @@
+{
+  "skill": "precipitation-nowcasting",
+  "skill_version": "1.0.0",
+  "command": "precipitation-nowcasting --bbox 116 39 117 40 --synthetic --lead-time 60 --n-frames 4 --quiet --output-dir ./_test_cli_nowcast",
+  "started_at": "2026-08-03T10:39:12.504239Z",
+  "finished_at": "2026-08-03T10:39:12.740555Z",
+  "exit_code": 0,
+  "inputs": {
+    "input": null,
+    "lead_time": 60.0,
+    "n_frames": 4,
+    "synthetic": true
+  },
+  "aoi": null,
+  "datasets": [],
+  "outputs": [
+    {
+      "path": "./_test_cli_nowcast\\forecast.tif",
+      "kind": "raster",
+      "size_bytes": null,
+      "crs_epsg": 4326,
+      "bbox_wgs84": [
+        116.0,
+        39.0,
+        117.0,
+        40.0
+      ],
+      "resolution_m": null,
+      "nodata": null,
+      "band_count": 4,
+      "feature_count": null,
+      "row_count": null
+    },
+    {
+      "path": "./_test_cli_nowcast\\displacement.json",
+      "kind": "json",
+      "size_bytes": null,
+      "crs_epsg": null,
+      "bbox_wgs84": null,
+      "resolution_m": null,
+      "nodata": null,
+      "band_count": null,
+      "feature_count": null,
+      "row_count": null
+    }
+  ],
+  "qa": {
+    "source": "synthetic",
+    "n_frames_input": 4,
+    "n_forecast_steps": 4,
+    "velocity_vy_px": 2.0,
+    "velocity_vx_px": 3.0,
+    "mean_peak_correlation": 0.9943236425365378,
+    "lead_time_minutes": 60.0,
+    "n_valid_pixels_last_frame": 4096,
+    "n_total_pixels_last_frame": 4096,
+    "synthetic_truth_velocity": {
+      "vy": 2.0,
+      "vx": 3.0
+    }
+  },
+  "software": {
+    "python": "3.9.21",
+    "skill": "precipitation-nowcasting"
+  },
+  "error": null
+}
